@@ -1,0 +1,1 @@
+export const ELPE_DAMAGE_ROWS = 5;

@@ -1,0 +1,84 @@
+﻿html {
+    overflow: auto;
+}
+
+table.elpeefpe-table td {
+    font-size: 20pt;
+    border: 1px solid white;
+    text-align: center;
+}
+
+table.elpeefpe-table td img {
+    height: 1em;
+}
+
+.elpeefpe-controls {
+    display: flex;
+}
+
+.elpeefpe-control {
+    flex-grow: 1;
+}
+
+.elpeefpe-control div {
+    text-align: center;
+    padding: 10px;
+}
+
+.elpeefpe-control img {
+    width: 5vw;
+    max-height: 5vh;
+}
+
+.elpeefpe-control .win-button {
+    min-width: 60px;
+}
+
+.list-wrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.win-listview {
+    height: 100%;
+    width: 100%;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+}
+
+button[disabled] {
+    opacity: 0.4;
+}
+
+.nav-header {
+    display: flex;
+}
+
+.nav-header button {
+    margin: auto;
+}
+
+.nav-header h1 {
+    flex-grow: 1;
+}
+
+.elpeefpe-table {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.elpeefpe-table table {
+    table-layout: fixed;
+}
+
+.win-listview > .win-viewport {
+    position: absolute;
+}
+
+.list-item {
+    padding: 5px;
+}

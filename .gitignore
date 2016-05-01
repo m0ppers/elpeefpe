@@ -1,0 +1,12 @@
+node_modules
+*.pfx
+AppPackages
+BundleArtifacts
+elpeefpe-win.js
+_pkginfo.txt
+_language-en.appx
+Package.StoreAssociation.xml
+bin
+.vs
+bld
+*.user
