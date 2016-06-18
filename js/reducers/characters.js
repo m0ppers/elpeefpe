@@ -43,8 +43,10 @@ let createFrontendCharacter = function(backendCharacter) {
 export default function characters(state = initialState, action) {
   switch (action.type) {
     case ADDING_DAMAGE:
+      
       var characterIndex = findCharacterIndex(state, action.characterKey);
-      return update(state, {
+      console.log("ADDING DAMAGE", characterIndex);
+      let newState = update(state, {
         [characterIndex]: {
           [action.damageCategory]: {
             dmg: {
@@ -57,6 +59,7 @@ export default function characters(state = initialState, action) {
           }
         }
       });
+      return newState;
       break;
     case REMOVING_DAMAGE:
       var characterIndex = findCharacterIndex(state, action.characterKey);

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import ElpeEfpeCharacterView from '../ElpeEfpeCharacterView.jsx';
+import ElpeEfpeCharacterView from '../ElpeEfpeCharacterView.js';
 import { removeCharacter, loadCharacters } from '../../../js/actions/elpeEfpeActions.js';
 
 const mapDispatchToProps = (dispatch) => {

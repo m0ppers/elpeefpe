@@ -1,5 +1,5 @@
 import * as types from '../constants/elpeEfpeActionTypes.js';
-import persistence from '../persistence';
+import persistenceFactory from '../persistence';
 import { VERZEHRT, ERSCHOEPFT, KANALISIERT } from  '../constants/elpeEfpeDamageTypes.js';
 import { ELPE_DAMAGE_ROWS } from '../constants/general.js';
 
@@ -9,6 +9,8 @@ export function savingCharacter(character) {
       character: character,
   }
 }
+
+let persistence = persistenceFactory();
 
 export function added(character) {
   return {
